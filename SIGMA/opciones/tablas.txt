@@ -1,0 +1,526 @@
+	
+Tablas
+
+Originalmente, la función de las tablas era presentar la información de forma ordenada.
+
+Sin embargo, pueden ser utilizadas para distribuir los distintos elementos de nuestra página (gráficos, texto...) pudiendo, incluso, generar márgenes con el fin de dar una presencia más elegante a nuestro documento.
+
+Para crear una tabla se utilizan los siguientes tags:
+
+<TABLE> indica inicio de tabla.
+<TR> indica inicio de fila.
+<TD> indica inicio de celda.
+Todos estos tags exigen sus correspondientes cierres (</TD>, </TRD> y </TABLE>).
+
+A continuación se muestran varios ejemplos de tablas. Primero se muestra el código que las genera y, debajo, el resultado.
+
+Este que sigue es el código para una tabla simple de cuatro filas por cuatro columnas: 
+ 
+
+Tabla I. Tabla simple.
+
+<TABLE>
+<TR>  <!-- Primera fila -->
+   <TD>Película</TD>
+   <TD>Director</TD>
+   <TD>Año</TD>
+   <TD>País</TD>
+</TR>
+<TR>  <!-- Segunda fila -->
+   <TD>2001</TD>
+   <TD>Stanley Kubrik</TD>
+   <TD>1968</TD>
+   <TD>USA</TD>
+</TR>
+<TR>  <!-- Tercera fila -->
+   <TD>Ciudadano Kane</TD>
+   <TD>Orson Welles</TD>
+   <TD>1939</TD>
+   <TD>USA</TD>
+</TR>
+<TR>  <!-- Cuarta fila -->
+   <TD>El cochecito</TD>
+   <TD>Marco Ferreri</TD>
+   <TD>1960</TD>
+   <TD>España</TD>
+</TR>
+</TABLE> 
+
+ 
+Película	Director	Año	País
+2001	Stanley Kubrik	1968	USA
+Ciudadano Kane	Orson Welles	1939	USA
+El cochecito	Marco Ferreri	1960	España
+ 
+
+Se puede poner un borde a esta tabla añadiendo a <TABLE> el modificador BORDER. Observar que el valor del modificador va entre comillas 
+ 
+
+Tabla II: Modificador BORDER.
+
+<TABLE BORDER="2">
+<TR>
+   <TD>Película</TD>
+   <TD>Director</TD>
+   <TD>Año</TD>
+   <TD>País</TD>
+</TR>
+<TR>
+   <TD>2001</TD>
+   <TD>Stanley Kubrik</TD>
+   <TD>1968</TD>
+   <TD>USA</TD>
+</TR>
+<TR>
+   <TD>Ciudadano Kane</TD>
+   <TD>Orson Welles</TD>
+   <TD>1939</TD>
+   <TD>USA</TD>
+</TR>
+<TR>
+   <TD>El cochecito</TD>
+   <TD>Marco Ferreri</TD>
+   <TD>1960</TD>
+   <TD>España</TD>
+</TR>
+</TABLE>
+
+ 
+Película	Director	Año	País
+2001	Stanley Kubrik	1968	USA
+Ciudadano Kane	Orson Welles	1939	USA
+El cochecito	Marco Ferreri	1960	España
+ 
+
+El modificador WIDTH se puede emplear tanto a toda la tabla como a columnas. En el primer caso se aplica al tag <TABLE>. En el segundo caso es suficiente aplicarlo a una de las celdas de la columna, en el tag <TD>.
+
+En este primer ejemplo se va a utilizar el modificador WIDTH para definir el ancho de pantalla que ocupa la tabla. 
+ 
+
+Tabla III: Modificador WIDTH aplicado a toda la tabla.
+
+<TABLE BORDER="2" WIDTH="80%"> <!-- Esta tabla ocupa 
+                                el 80% del ancho de pantalla -->
+<TR>
+   <TD>Película</TD>
+   <TD>Director</TD>
+   <TD>Año</TD>
+   <TD>País</TD>
+</TR>
+<TR>
+   <TD>2001</TD>
+   <TD>Stanley Kubrik</TD>
+   <TD>1968</TD>
+   <TD>USA</TD>
+</TR>
+<TR>
+   <TD>Ciudadano Kane</TD>
+   <TD>Orson Welles</TD>
+   <TD>1939</TD>
+   <TD>USA</TD>
+</TR>
+<TR>
+   <TD>El cochecito</TD>
+   <TD>Marco Ferreri</TD>
+   <TD>1960</TD>
+   <TD>España</TD>
+</TR>
+</TABLE>
+
+ 
+Película	Director	Año	País
+2001	Stanley Kubrik	1968	USA
+Ciudadano Kane	Orson Welles	1939	USA
+El cochecito	Marco Ferreri	1960	España
+ 
+
+Ahora, se va a utilizar el modificador WIDTH para determinar el ancho de una columna respecto a la tabla. Sólo hay que indicarlo en una de las celdas de la columna (en este ejemplo, la primera). 
+ 
+
+Tabla IV: Modificador WIDTH aplicado a una columna.
+
+<TABLE BORDER="2" WIDTH="80%">
+<TR>
+   <TD WIDTH="50%">Película</TD> <!-- Esta celda ocupa 
+                                  el 50% del ancho de la tabla -->
+   <TD>Director</TD>
+   <TD>Año</TD>
+   <TD>País</TD>
+</TR>
+<TR>
+   <TD>2001</TD>
+   <TD>Stanley Kubrik</TD>
+   <TD>1968</TD>
+   <TD>USA</TD>
+</TR>
+<TR>
+   <TD>Ciudadano Kane</TD>
+   <TD>Orson Welles</TD>
+   <TD>1939</TD>
+   <TD>USA</TD>
+</TR>
+<TR>
+   <TD>El cochecito</TD>
+   <TD>Marco Ferreri</TD>
+   <TD>1960</TD>
+   <TD>España</TD>
+</TR>
+</TABLE>
+
+ 
+Película	Director	Año	País
+2001	Stanley Kubrik	1968	USA
+Ciudadano Kane	Orson Welles	1939	USA
+El cochecito	Marco Ferreri	1960	España
+ 
+
+Mediante los modificadores COLSPAN y ROWSPAN de la directiva <TD > se puede definir celdas que se extienden varias filas o columnas.
+
+Aquí se ve una celda que se extiende a dos columnas. 
+ 
+
+Tabla V: Modificador COLSPAN.
+
+<TABLE BORDER="2" WIDTH="80%">
+<TR>
+   <TD>Película</TD>
+   <TD COLSPAN="2">Director y año</TD>
+   <TD>País</TD>
+</TR>
+<TR>
+   <TD>2001</TD>
+   <TD>Stanley Kubrik</TD>
+   <TD>1968</TD>
+   <TD>USA</TD>
+</TR>
+<TR>
+   <TD>Ciudadano Kane</TD>
+   <TD>Orson Welles</TD>
+   <TD>1939</TD>
+   <TD>USA</TD>
+</TR>
+<TR>
+   <TD>El cochecito</TD>
+   <TD>Marco Ferreri</TD>
+   <TD>1960</TD>
+   <TD>España</TD>
+</TR>
+</TABLE>
+
+ 
+Película	Director y año	País
+2001	Stanley Kubrik	1968	USA
+Ciudadano Kane	Orson Welles	1939	USA
+El cochecito	Marco Ferreri	1960	España
+ 
+
+Ahora se ve una celda que se extiende dos filas. 
+ 
+
+Tabla VI: Modificador ROWSPAN.
+
+<TABLE BORDER="2" WIDTH="80%">
+<TR>
+   <TD>Película</TD>
+   <TD>Director</TD>
+   <TD>Año</TD>
+   <TD>País</TD>
+</TR>
+<TR>
+   <TD>2001</TD>
+   <TD>Stanley Kubrik</TD>
+   <TD>1968</TD>
+   <TD ROWSPAN="2">USA</TD>
+</TR>
+<TR>
+   <TD>Ciudadano Kane</TD>
+   <TD>Orson Welles</TD>
+   <TD>1939</TD>
+</TR>
+<TR>
+   <TD>El cochecito</TD>
+   <TD>Marco Ferreri</TD>
+   <TD>1960</TD>
+   <TD>España</TD>
+</TR>
+</TABLE>
+
+ 
+Película	Director	Año	País
+2001	Stanley Kubrik	1968	USA
+Ciudadano Kane	Orson Welles	1939
+El cochecito	Marco Ferreri	1960	España
+ 
+
+Ahora se verá una combinación de ambas. 
+ 
+
+Tabla VII: Modificadores COLSPAN y ROWSPAN en conjunto.
+
+<TABLE BORDER="2" WIDTH="80%">
+<TR>
+   <TD COLSPAN="3" ROWSPAN="3">Celda enorme</TD>
+   <TD>Celda normal</TD>
+</TR>
+<TR>
+   <TD>Celda normal</TD>
+</TR>
+<TR>
+   <TD>Celda normal</TD>
+</TR>
+<TR>
+   <TD>Celda normal</TD>
+   <TD>Celda normal</TD>
+   <TD>Celda normal</TD>
+   <TD>Celda normal</TD>
+</TR>
+</TABLE>
+
+ 
+Celda enorme	Celda normal
+Celda normal
+Celda normal
+Celda normal	Celda normal	Celda normal	Celda normal
+ 
+
+Los elementos de una tabla se pueden alinear no sólo horizontal, sino también verticalmente. Para ello se utiliza el modificador VALIGN. 
+ 
+
+Tabla VIII: Modificador VALIGN.
+
+<TABLE BORDER="2" WIDTH="80%">
+<TR>
+   <TD WIDTH="50%" VALIGN="top"><B>Texto alineado en la parte  
+       superior de su celda.</B></TD>
+   <TD>Esto que viene aquí no es más que un texto 
+       largo para que ocupe varias líneas y se aprecie mejor la 
+       alineación del texto de la otra columna.
+       Esto que viene aquí no es más que un texto 
+       largo para que ocupe varias líneas y se aprecie mejor la 
+       alineación del texto de la otra columna.
+</TR>
+<TR>
+   <TD VALIGN="middle"><B>Texto alineado a media altura en 
+       su celda.</B></TD>
+   <TD>Esto que viene aquí no es más que un texto 
+       largo para que ocupe varias líneas y se aprecie mejor la 
+       alineación del texto de la otra columna.
+       Esto que viene aquí no es más que un texto 
+       largo para que ocupe varias líneas y se aprecie mejor la 
+       alineación del texto de la otra columna.
+</TR>
+<TR>
+   <TD VALIGN="bottom"><B>Texto alineado en la parte inferior 
+       de su celda.</B></TD>
+   <TD>Esto que viene aquí no es más que un texto 
+       largo para que ocupe varias líneas y se aprecie mejor la 
+       alineación del texto de la otra columna.
+       Esto que viene aquí no es más que un texto 
+       largo para que ocupe varias líneas y se aprecie mejor la 
+       alineación del texto de la otra columna.
+</TR>
+</TABLE>
+
+ 
+Texto alineado en la parte superior de su celda.	Esto que viene aquí no es más que un texto largo para que ocupe varias líneas y se aprecie mejor la alineación del texto de la otra columna. Esto que viene aquí no es más que un texto largo para que ocupe varias líneas y se aprecie mejor la alineación del texto de la otra columna.
+Texto alineado a media altura en su celda.	Esto que viene aquí no es más que un texto largo para que ocupe varias líneas y se aprecie mejor la alineación del texto de la otra columna. Esto que viene aquí no es más que un texto largo para que ocupe varias líneas y se aprecie mejor la alineación del texto de la otra columna.
+Texto alineado en la parte inferior de su celda.	Esto que viene aquí no es más que un texto largo para que ocupe varias líneas y se aprecie mejor la alineación del texto de la otra columna. Esto que viene aquí no es más que un texto largo para que ocupe varias líneas y se aprecie mejor la alineación del texto de la otra columna.
+ 
+
+El modificador CELLPADDING permite definir el espacio entre el borde de la celda y su contenido. En la siguiente tabla se va a definir un espacio de 10 píxeles. 
+ 
+
+Tabla IX: Modificador CELLPADDING.
+
+<TABLE BORDER="2" CELLPADDING="10">
+<TR>
+   <TD>Película</TD>
+   <TD>Director</TD>
+   <TD>Año</TD>
+   <TD>País</TD>
+</TR>
+<TR>
+   <TD>2001</TD>
+   <TD>Stanley Kubrik</TD>
+   <TD>1968</TD>
+   <TD>USA</TD>
+</TR>
+<TR>
+   <TD>Ciudadano Kane</TD>
+   <TD>Orson Welles</TD>
+   <TD>1939</TD>
+   <TD>USA</TD>
+</TR>
+<TR>
+   <TD>El cochecito</TD>
+   <TD>Marco Ferreri</TD>
+   <TD>1960</TD>
+   <TD>España</TD>
+</TR>
+</TABLE> 
+
+ 
+Película	Director	Año	País
+2001	Stanley Kubrik	1968	USA
+Ciudadano Kane	Orson Welles	1939	USA
+El cochecito	Marco Ferreri	1960	España
+ 
+
+El modificador CELLSPACING permite definir el espacio entre celdas. En la siguiente tabla se va a definir un espacio de 10 píxeles.
+
+Conviene no confundir este modificador con el modificador BORDER. Este último afecta sólo al borde exterior, mientras que CELLSPACING afecta al borde entre celdas. 
+ 
+
+Tabla X: Modificador CELLSPACING.
+
+<TABLE BORDER="2" CELLSPACING="10">
+<TR>
+   <TD>Película</TD>
+   <TD>Director</TD>
+   <TD>Año</TD>
+   <TD>País</TD>
+</TR>
+<TR>
+   <TD>2001</TD>
+   <TD>Stanley Kubrik</TD>
+   <TD>1968</TD>
+   <TD>USA</TD>
+</TR>
+<TR>
+   <TD>Ciudadano Kane</TD>
+   <TD>Orson Welles</TD>
+   <TD>1939</TD>
+   <TD>USA</TD>
+</TR>
+<TR>
+   <TD>El cochecito</TD>
+   <TD>Marco Ferreri</TD>
+   <TD>1960</TD>
+   <TD>España</TD>
+</TR>
+</TABLE> 
+
+ 
+Película	Director	Año	País
+2001	Stanley Kubrik	1968	USA
+Ciudadano Kane	Orson Welles	1939	USA
+El cochecito	Marco Ferreri	1960	España
+ 
+
+Con los modificadores BGCOLOR y BACKGROUND se puede aplicar un fondo a las celdas de una tabla, a sus filas o a la tabla misma, pudiendo ser éste tanto un color como un motivo.
+
+En caso de existir un fondo de tabla, un fondo de fila, un fondo de celda y un motivo, el motivo tendrá preferencia sobre el color de fondo, el fondo de celda tendrá preferencia sobre el de fila, y éste sobre el de tabla.
+
+Para aprender a definir colores ir a colores. 
+ 
+
+Tabla XI: Modificadores BGCOLOR y BACKGROUD.
+
+<TABLE BORDER="2" WIDTH="80%" BGCOLOR="ffffcc">
+<TR>
+  <TD>Fondo de la tabla</TD>
+  <TD BGCOLOR="ffffff">Fondo de la celda</TD>
+  <TD ROWSPAN="4" BACKGROUND="nubes.jpg">Fondo de la celda</TD>
+</TR>
+<TR>
+  <TD>Fondo de la tabla</TD>
+  <TD BGCOLOR="00ffff">Fondo de la celda</TD>
+</TR>
+<TR BGCOLOR="ccccff">
+  <TD>Fondo de la fila</TD>
+  <TD BGCOLOR="0000ff">Fondo de la celda</TD>
+</TR>
+<TR BGCOLOR="ff0000">
+  <TD>Fondo de la fila</TD>
+  <TD BGCOLOR="000000">Fondo de la celda</TD>
+</TR>
+</TABLE> 
+
+ 
+Fondo de la tabla	Fondo de la celda	Fondo de la celda
+Fondo de la tabla	Fondo de la celda
+Fondo de la fila	Fondo de la celda
+Fondo de la fila	Fondo de la celda
+ 
+
+Podemos poner a esta tabla un pie o una cabecera usando el tag <CAPTION>. El modificador ALIGN decide si es cabecera (top) o pie (bottom). En este ejemplo aparece el texto como pie de tabla. 
+ 
+
+Tabla XII
+
+<TABLE BORDER="2">
+<CAPTION ALIGN="bottom"> <I>Datos de cine</I> </CAPTION>
+<TR>
+   <TD>Película</TD>
+   <TD>Director</TD>
+   <TD>Año</TD>
+   <TD>País</TD>
+</TR>
+<TR>
+   <TD>2001</TD>
+   <TD>Stanley Kubrik</TD>
+   <TD>1968</TD>
+   <TD>USA</TD>
+</TR>
+<TR>
+   <TD>Ciudadano Kane</TD>
+   <TD>Orson Welles</TD>
+   <TD>1939</TD>
+   <TD>USA</TD>
+</TR>
+<TR>
+   <TD>El cochecito</TD>
+   <TD>Marco Ferreri</TD>
+   <TD>1960</TD>
+   <TD>España</TD>
+</TR>
+</TABLE>
+
+ 
+Datos de cine
+Película	Director	Año	País
+2001	Stanley Kubrik	1968	USA
+Ciudadano Kane	Orson Welles	1939	USA
+El cochecito	Marco Ferreri	1960	España
+ 
+
+En HTML una tabla puede, por supuesto, tener una celda vacía. Sin embargo, hay dos modos de hacer esto. Uno es incluir ningún contenido dentro de la celda. Otro es incluír el caracter en blanco &nbsp;.
+
+Este caracter es similar a un espacio en blanco que ocupa la celda, aunque ésta no muestre ningún contenido. El efecto, en ambos casos, es sensiblemente diferente. 
+ 
+
+Tabla XIII
+
+<TABLE BORDER="2" WIDTH="75%">
+<TR>
+  <TD WIDTH="25%">Esto de abajo son celdas ocupadas por un espacio.</TD>
+  <TD WIDTH="25%">Esto de abajo son celdas vacías.</TD>
+  <TD WIDTH="25%">Aquí se alternan.</TD>
+  <TD WIDTH="25%">Aquí se alternan.</TD>
+</TR>
+<TR>
+  <TD WIDTH="25%">&nbsp;</TD> <!-- Aquí hay un caracter en blanco -->
+  <TD WIDTH="25%"></TD> <!-- Esto es una celda vacía -->
+  <TD WIDTH="25%">&nbsp;</TD>
+  <TD WIDTH="25%"></TD>
+</TR>
+<TR>
+  <TD WIDTH="25%">&nbsp;</TD>
+  <TD WIDTH="25%"></TD>
+  <TD WIDTH="25%"></TD>
+  <TD WIDTH="25%">&nbsp;</TD>
+</TR>
+<TR>
+  <TD WIDTH="25%">&nbsp;</TD>
+  <TD WIDTH="25%"></TD>
+  <TD WIDTH="25%">&nbsp;</TD>
+  <TD WIDTH="25%"></TD>
+</TR>
+</TABLE>
+
+ 
+Esto de abajo son celdas ocupadas por un espacio.	Esto de abajo son celdas vacías.	Aquí se alternan.	Aquí se alternan.
+ 		 	
+ 			 
+ 		 	
+ 

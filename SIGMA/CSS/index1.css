@@ -1,0 +1,41 @@
+
+
+
+body { 
+            background:url(../imagen/fondo/fondo1.jpg) no-repeat fixed;
+          	-webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+			
+			position: static;
+		    }
+			
+
+	
+
+
+	
+	
+
+	
+	
+.div_logueo
+{
+
+position: fixed;
+margin: 25% 40%;
+
+background-color: rgba(212, 212, 212, 0.5);
+font-size: 14px;
+ border-radius:6px; 
+-moz-border-radius:6px; /* Firefox */ 
+-webkit-border-radius:6px; /* Safari y Chrome */ 
+/* Otros estilos */ 
+border:1px solid #C0C0C0;
+
+
+padding:1px;
+
+
+}

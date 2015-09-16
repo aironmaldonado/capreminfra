@@ -1,0 +1,143 @@
+
+INSERT INTO `dpf` VALUES (1, 'Activo', '2015-04-13', 5000000.00, 60, 14.50, '2015-06-12', 'CERTIF', 120833.33, 1, 'A', 2014, 6, 12, 2015, 4, 13, '', '', 0, 0, 0);
+INSERT INTO `dpf` VALUES (2, 'Activo', '2015-04-20', 7000000.00, 90, 14.50, '2015-07-20', 'DPF', 253750.00, 2, 'A', 2015, 7, 20, 2015, 4, 20, '', '', 0, 0, 0);
+INSERT INTO `dpf` VALUES (3, 'Activo', '2015-05-11', 5000000.00, 90, 14.50, '2015-08-10', 'DPF', 181250.00, 3, 'A', 2015, 8, 10, 2015, 5, 11, '', '', 0, 0, 0);
+INSERT INTO `dpf` VALUES (4, 'Mi Banco', '2015-04-15', 1709255.56, 30, 7.00, '2015-05-15', 'CERTIF', 9970.66, 5, 'A', 2015, 5, 15, 2015, 4, 15, '', '', 0, 0, 0);
+INSERT INTO `dpf` VALUES (5, 'Mi Banco', '2015-03-18', 1700000.00, 90, 14.50, '2015-06-16', 'DPF', 61625.00, 6, 'A', 2015, 6, 16, 2015, 3, 18, '', '', 0, 0, 0);
+INSERT INTO `dpf` VALUES (6, 'Mi Banco', '2015-02-23', 7443588.78, 91, 14.50, '2015-05-25', 'DPF', 272828.21, 7, 'A', 2015, 5, 25, 2015, 2, 23, '', '', 0, 0, 0);
+INSERT INTO `dpf` VALUES (7, 'Mi Banco', '2015-04-30', 3050952.31, 28, 6.50, '2015-05-29', 'CERTIF', 15.42, 7, 'A', 2015, 5, 29, 2015, 4, 30, '', '', 0, 0, 0);
+INSERT INTO `dpf` VALUES (8, 'Mi Banco', '2015-05-08', 3442649.78, 28, 6.50, '2015-06-05', 'CERTIF', 17404.51, 1, 'A', 2015, 6, 5, 2015, 5, 8, '', '', 0, 0, 0);
+INSERT INTO `dpf` VALUES (9, 'Mi Banco', '2015-03-27', 4330052.66, 60, 14.50, '2015-05-26', 'DPF', 104642.94, 5, 'A', 2015, 5, 26, 2015, 3, 27, '', '', 0, 0, 0);
+INSERT INTO `dpf` VALUES (10, 'Bancaribe', '2015-05-06', 8000000.00, 29, 11.00, '2015-06-04', 'CERTIF', 70888.89, 1, 'A', 2015, 6, 4, 2015, 5, 6, '', '', 0, 0, 0);
+INSERT INTO `dpf` VALUES (11, 'Bancaribe', '2015-04-29', 4000000.00, 28, 11.00, '2015-05-27', 'CERTIF', 34222.22, 12, 'A', 2015, 5, 27, 2015, 4, 29, '', '', 0, 0, 0);
+INSERT INTO `dpf` VALUES (12, 'Bancamiga', '2015-03-23', 5000000.00, 88, 14.50, '2015-06-19', 'DPF', 177222.22, 34234, 'A', 2015, 6, 19, 2015, 3, 23, '', '', 0, 0, 0);
+INSERT INTO `dpf` VALUES (13, 'Bancamiga', '2015-03-17', 3000000.00, 90, 14.50, '2015-06-15', 'DPF', 108750.00, 125, 'A', 2015, 6, 15, 2015, 3, 17, '', '', 0, 0, 0);
+INSERT INTO `dpf` VALUES (14, 'Bancamiga', '2015-02-19', 5000000.00, 90, 14.50, '2015-05-20', 'DPF', 181250.00, 589, 'A', 2015, 5, 20, 2015, 2, 19, '', '', 0, 0, 0);
+INSERT INTO `dpf` VALUES (15, 'Banco Caroni', '2015-05-14', 5000000.00, 28, 8.50, '2015-06-11', 'CERTIF', 33055.56, 51, 'A', 2015, 6, 11, 2015, 5, 14, '', '', 0, 0, 0);
+INSERT INTO `dpf` VALUES (16, 'Bancrecer', '2015-04-10', 5000000.00, 60, 9.50, '2015-06-09', 'CERTIF', 79166.67, 54, 'A', 2015, 6, 9, 2015, 4, 10, '', '', 0, 0, 0);
+INSERT INTO `dpf` VALUES (17, 'Bancrecer', '2015-05-11', 3200000.00, 60, 12.00, '2015-07-10', 'CERTIF', 64000.00, 152, 'A', 2015, 7, 10, 2015, 5, 11, '', '', 0, 0, 0);
+INSERT INTO `dpf` VALUES (18, 'Bancrecer', '2015-05-14', 8000000.00, 60, 14.50, '2015-07-13', 'DPF', 193333.33, 655, 'A', 2015, 7, 13, 2015, 5, 14, '', '', 0, 0, 0);
+INSERT INTO `dpf` VALUES (19, 'Bancrecer', '2015-03-27', 2200000.00, 58, 8.00, '2015-05-26', 'CERTIF', 28355.56, 698, 'A', 2015, 5, 26, 2015, 3, 27, '', '', 0, 0, 0);
+INSERT INTO `dpf` VALUES (20, 'Sofitasa', '2015-04-27', 5000000.00, 28, 7.50, '2015-05-25', 'CERTIF', 29166.67, 554, 'A', 2015, 5, 25, 2015, 4, 27, '', '', 0, 0, 0);
+INSERT INTO `dpf` VALUES (21, 'Sofitasa', '2015-05-04', 1003888.89, 28, 5.00, '2015-06-01', 'CERTIF', 3904.01, 55, 'A', 2015, 6, 1, 2015, 5, 4, '', '', 0, 0, 0);
+INSERT INTO `dpf` VALUES (22, 'Banesco', '2015-04-29', 5000000.00, 29, 8.00, '2015-06-03', 'CERTIF', 32222.22, 225, 'A', 2015, 6, 3, 2015, 4, 29, '', '', 0, 0, 0);
+INSERT INTO `dpf` VALUES (23, 'BNC', '2015-05-06', 5000000.00, 28, 8.00, '2015-06-03', 'CERTIF', 31111.11, 55, 'A', 2015, 6, 3, 2015, 5, 6, '', '', 0, 0, 0);
+INSERT INTO `dpf` VALUES (24, 'Bolsa Publica', '2015-05-20', 4500000.00, 90, 16.50, '2015-08-18', 'Bono BCV', 185625.00, 5698, 'A', 2015, 8, 18, 2015, 5, 20, '', '', 0, 0, 0);
+INSERT INTO `dpf` VALUES (25, 'Bolsa Publica', '2015-04-22', 4160000.00, 90, 16.50, '2015-07-23', 'Bono BCV', 171600.00, 54984, 'A', 2015, 7, 23, 2015, 4, 22, '', '', 0, 0, 0);
+INSERT INTO `dpf` VALUES (26, 'B', '2015-01-22', 4160000.00, 90, 16.50, '2015-09-23', 'Bono BCV', 171600.00, 54984, 'a', 2015, 7, 23, 2015, 4, 22, '', '', 0, 0, 0);
+INSERT INTO `dpf` VALUES (27, 'B', '2015-10-22', 4160000.00, 90, 16.50, '2015-10-23', 'Bono BCV', 171600.00, 54984, 'a', 2015, 7, 23, 2015, 4, 22, '', '', 0, 0, 0);
+INSERT INTO `dpf` VALUES (28, 'b', '2015-05-29', 5000000.00, 60, 14.50, '2015-06-12', 'CERTIF', 120833.33, 1, 'A', 2014, 6, 12, 2015, 4, 13, '', '', 0, 0, 0);
+INSERT INTO `dpf` VALUES (29, 'b', '2000-06-29', 5000000.00, 60, 14.50, '2021-06-25', 'CERTIF', 120833.33, 1, 'A', 2014, 6, 12, 2015, 4, 13, '', '', 0, 0, 0);
+INSERT INTO `dpf` VALUES (30, 'b', '2014-05-29', 5000000.00, 60, 14.50, '2014-06-12', 'CERTIF', 120833.33, 1, 'A', 2014, 6, 12, 2015, 4, 13, '', '', 0, 0, 0);
+INSERT INTO `dpf` VALUES (31, 'b', '2000-05-29', 5000000.00, 60, 14.50, '2051-06-12', 'CERTIF', 120833.33, 1, 'A', 2014, 6, 12, 2015, 4, 13, '', '', 0, 0, 0);
+INSERT INTO `dpf` VALUES (32, 'b', '2016-05-29', 5000000.00, 60, 14.50, '2016-06-12', 'CERTIF', 120833.33, 1, 'A', 2014, 6, 12, 2015, 4, 13, '', '', 0, 0, 0);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			}
+/*---------------------------------- saca el periodo de todos -----------------------------------------*/					
+				
+			/*$fe = explode("-",$F_emi_usu);
+					$fea=$fe[0]; // porción1
+					$fem=$fe[1]; // porción2
+					$fed=$fe[2];
+					
+			$fv = explode("-",$F_ven_usu);
+					$fva=$fv[0]; // porción1
+					$fvm=$fv[1]; // porción2
+					$fvd=$fv[2];
+			$PeriodoVen=gregoriantojd($fvm,$fvd,$fva);		
+			$PeriodoEmi=gregoriantojd($fem,$fed,$fea);		
+			$dias=$PeriodoVen-$PeriodoEmi;
+				
+				
+$buscar = mysql_query ("SELECT * FROM dpf where  emitido1='x' and emitido2='x'   ",$conexPres);
+	
+				    while($vec1=mysql_fetch_assoc($buscar))
+							{
+								include("opciones/conexion_prestamo.php");
+								$cod_dpf=$vec1["cod_dpf"]; 
+								$F_emi_dpf =$vec1["femision"]; 
+								$F_ven_dpf =$vec1["fvencimiento"];
+
+								$FEmision1 = explode("-",$F_emi_dpf);
+								$feaaaa=$FEmision1[0]; 	$femm=$FEmision1[1]; $fedd=$FEmision1[2];
+								$fvencimiento1 = explode("-",$F_ven_dpf);
+								$fvaaaa=$fvencimiento1[0]; $fvmm=$fvencimiento1[1]; $fvdd=$fvencimiento1[2];
+					
+								 $Emi=gregoriantojd($femm,$fedd,$feaaaa);					
+								 $Ven=gregoriantojd($fvmm,$fvdd,$fvaaaa);	
+								
+								
+								
+								//echo ('Fecha usu__'),$F_emi_usu, ('>=');	echo ('__fecha Dpf:___'),$F_emi_dpf; ?></br><?
+								//echo ('Fecha usu__'),$F_ven_usu, ('>=');	echo ('__fecha Dpf:___'),$F_ven_dpf;?></br><?
+								
+								
+								
+								
+								if($F_emi_dpf >= $F_emi_usu && $F_ven_dpf  <= $F_ven_usu)
+								{	
+									
+									//echo ("opcA"); 
+									 //$intPeriodo=($Emi-$Ven)*-1;
+									$int_diferido=$Ven-$Emi; 
+									$intGenerado=0;
+									$porpagar=0;
+																	
+								}
+								
+								
+								else if($F_emi_dpf  <= $F_emi_usu && $F_ven_dpf  > $F_ven_usu )
+								{
+									//echo ("opcB"); 
+										
+									 $intGenerado=$PeriodoEmi-$Emi;	        			
+									 $int_diferido=$PeriodoVen-$PeriodoEmi;			
+									 $porpagar=$Ven-$PeriodoVen;	        	
+								
+								}
+								
+								
+								else if( $F_emi_dpf  >= $F_emi_usu && $F_ven_dpf  > $F_ven_usu  )
+								{
+									//echo ("opcC"); 
+									
+									  $intGenerado=0;									
+									  $int_diferido=$PeriodoVen-$Emi;						
+									  $porpagar=$Ven-$PeriodoVen;		
+								
+								}
+									
+									
+									
+									
+									else if( $F_emi_usu  > $F_emi_dpf && $F_ven_usu  >= $F_ven_dpf  )
+								{
+									//echo ("opcD"); 
+									
+									 $intGenerado=$PeriodoEmi-$Emi;						
+									 $int_diferido=$Ven-$PeriodoEmi;						
+									 $porpagar=0;
+									 
+								}
+								
+								
+								
+								mysql_query (" UPDATE  dpf SET Int_abonado =  '$intGenerado' ,	 int_diferido =  '$int_diferido' , int_PorVencer =  '$porpagar'   WHERE  cod_dpf ='$cod_dpf'  ",$conexPres);
+
+							}
+							
+							*/
